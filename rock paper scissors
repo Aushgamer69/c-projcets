@@ -1,0 +1,13 @@
+"So for this project, I wanted to build something fun and interactive using basic C++ control scissors flow, so I made a terminal-based Rock, Paper, Scissors game where you play against the computer.
+
+The way it works is pretty straightforward:
+
+The Loop: I wrapped the whole thing in a while loop so you can keep playing as many rounds as you want without having to restart the program every time.
+
+The Computer Choice: It uses srand and time(0) to grab a random number between 1 and 3, mapping it out to rock, paper, or scissors so the computer's moves are actually randomized.
+
+Score Tracking: It keeps a running tally of your wins, losses, and ties throughout the session, and prints them out at the end of every round.
+
+If I were to talk about what went wrong while building it—and let's be honest, we all make silly bugs—I completely messed up a simple conditional check by using a single = assignment operator instead of a double == comparison inside my computer choice logic. That basically forced the computer to pick rock every single time, which completely broke the randomness until I caught it.
+
+Going forward, the big things I want to fix are adding proper input validation so the program doesn't break if someone types a letter instead of a number, and letting users type actual words like 'rock' instead of raw numbers."
