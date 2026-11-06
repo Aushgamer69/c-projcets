@@ -1,0 +1,11 @@
+What it is: Built a fundamental CLI geography quiz game in C++ to practice string variables, console input/output, and conditional control flow.
+
+How it works: Hardcoded questions and answers into variables, using sequential cin prompts and if-else branching to validate user input line by line.
+
+Key learnings & takeaways:
+
+Successfully handled basic terminal interaction and boolean evaluation.
+
+Identified a couple of practical bugs early on—specifically case sensitivity (e.g., matching "london" vs "London") and std::cin stopping at whitespace.
+
+Planned refactoring: The current version relies on repeated hardcoded blocks, so the immediate next step is to store questions in dynamic data structures (like std::vector or structs) and run them through a single for loop to make it scalabl
