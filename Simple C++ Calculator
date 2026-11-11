@@ -1,0 +1,11 @@
+# Simple C++ Calculator
+
+This is my second project while learning C++. I built this to practice control flow (`switch` statements) and basic input handling in the terminal.
+
+### Features
+- Supports basic arithmetic: addition, subtraction, multiplication, division, and modulo.
+- Basic error handling to prevent crashing when dividing or doing modulo by zero.
+
+### What I'm working on next
+- Moving away from `int` so it can actually handle decimals.
+- Better input validation for when people type weird characters.
