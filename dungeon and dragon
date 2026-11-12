@@ -1,0 +1,6 @@
+// Project Notes 
+// - Built a simple console-based RPG battle loop using C++ basics (while loops, switch cases, and rand).
+// - Fix the potion logic! Right now it just sets knight health to 100 instead of actually adding +30 health properly (need to cap it at max health so it doesn't overflow).
+// - Heavy attack currently has a random miss chance, but the balancing feels a bit off. Need to test the damage ranges for light vs heavy.
+// - Fixed a typo where 'drangon' was misspelled everywhere, kept getting compiler warnings if I wasn't careful with variable scopes.
+// - Next steps: add a loop counter to track how many turns the fight lasted, or add a shop system before the battle.
