@@ -1,0 +1,19 @@
+# Library & Bookstore Management System
+
+A simple console-based management system written in C++ to practice object-oriented programming, modern memory management, and STL containers.
+
+## Features
+- **Polymorphic Inventory:** Uses abstract base classes (`MediaItem`) and smart pointers (`std::shared_ptr`) to manage items dynamically.
+- **User Roles:** Structured classes for library patrons and retail customers.
+- **Core Operations:** Add new books, display current inventory, and search items instantly by ISBN.
+
+## Tech Stack
+- Language: C++ (Standard: C++11 or later)
+- Environment: Visual Studio Code
+
+## Getting Started
+Clone the repository and compile the source file using your preferred C++ compiler (like `g++`):
+
+```bash
+g++ main.cpp -o app
+./app
