@@ -1,0 +1,19 @@
+# C++ Hybrid Calculator
+
+A simple console-based calculator project built in C++ to practice Object-Oriented Programming (OOP) concepts, specifically multiple inheritance and class structures.
+
+## Overview
+This project combines basic arithmetic operations and scientific math functions into a single program. It is split into three main classes:
+- **SimpleCalculator:** Handles basic operations (`+`, `-`, `*`, `/`) with zero-division protection.
+- **ScientificCalculator:** Integrates the `<cmath>` library to handle operations like sine, cosine, tangent, and logarithms.
+- **HybridCalculator:** Inherits from both base classes using multiple inheritance to bundle both toolsets together.
+
+## Tech Stack
+- Language: C++
+- Standard Library: `<iostream>`, `<cmath>`
+- Environment: VS Code / MinGW g++
+
+## Future Improvements
+- Fix the scientific calculation workflow to accept single-value inputs correctly.
+- Add an interactive menu loop so the user can run multiple calculations without restarting the program.
+- Clean up naming conventions and class architectures.
