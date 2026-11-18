@@ -1,0 +1,26 @@
+# Hybrid Calculator 
+
+A simple command-line calculator built in C++ to practice and explore Object-Oriented Programming (OOP) concepts—specifically **multiple inheritance**.
+
+## 🚀 About the Project
+I built this project while learning C++ OOP fundamentals. The goal was to take two separate calculator domains—basic arithmetic and scientific calculations—and combine them into a single "Hybrid" calculator using multiple inheritance.
+
+## 🛠️ Features
+- **Simple Calculator Mode:** Handles standard arithmetic operations (`+`, `-`, `*`, `/`) with basic input validation (e.g., checking for division by zero).
+- **Scientific Calculator Mode:** Uses the `<cmath>` library to calculate trigonometric functions (`sin`, `cos`, `tan`) and logarithms (`log`).
+- **OOP Structure:** Demonstrates inheritance by deriving a `HybridCalculator` class from two distinct base classes (`simplecalculatoer` and `scientificcalculator`).
+
+## 💻 Tech Stack & Concepts
+- **Language:** C++
+- **Key Concepts:** Classes & Objects, Multiple Inheritance, Access Specifiers (`protected`, `private`, `public`), `switch` control statements, and standard math library integration.
+
+## 📂 Project Structure
+- `simplecalculatoer`: Base class managing basic arithmetic inputs and operations.
+- `scientificcalculator`: Base class managing scientific inputs and math functions.
+- `HybridCalculator`: Derived class combining both behaviors via multiple inheritance.
+- `main()': Entry point instantiating the hybrid calculator flow.
+
+## 📌 Future Improvements
+- Refactor the architecture from multiple inheritance to **composition** (has-a relationship), which makes more logical sense for a calculator design.
+- Clean up naming conventions and typos.
+- Fix the scientific calculation flow to handle inputs per operation cleanly rather than evaluating multiple numbers blindly.
