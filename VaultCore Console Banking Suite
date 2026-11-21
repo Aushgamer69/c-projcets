@@ -1,0 +1,20 @@
+# PolyLedger (VaultCore Console Banking Suite)
+
+A console-based banking app in C++ that I built to practice OOP, smart pointers (`unique_ptr`), and keeping a transaction history per account.
+
+## What It Does
+* Lets you select an active account when the program starts.
+* Supports checking your current balance, depositing money, and withdrawing money (with basic balance validation).
+* Automatically logs every deposit and withdrawal with a transaction ID, timestamp (`<ctime>`), amount, and type.
+* Displays the full transaction history for the selected account.
+
+## How It's Built
+* **OOP & Inheritance:** Uses an abstract `account` base class with a pure virtual `displayinfo()` function, inherited by `savingAccount` and `CurrentAccount`.
+* **Memory Management:** Stores accounts inside a `std::vector<std::unique_ptr<account>>` inside `LedgerManager` instead of using raw pointers.
+* **Ledger Tracking:** Each account holds a `std::vector<transaction>` to track its own history independently.
+
+## How to Run
+Compile with any modern C++ compiler (C++14 or newer):
+```bash
+g++ -std=c++14 main.cpp -o polyledger
+./polyledger
