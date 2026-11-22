@@ -1,0 +1,22 @@
+# Student Marks & CSV Exporter (C++)
+
+A small C++ practice project that stores a student's marks across five subjects, calculates the total and percentage, formats the record as a CSV line, and appends it to a local text file.
+
+## What It Does
+- Creates a `student` object with roll number, name, and marks for Maths, Physics, Chemistry, English, and Biology.
+- Calculates total marks and overall percentage out of 500.
+- Formats the student record into a comma-separated string using `ostringstream`.
+- Appends the formatted record to a file (`58students.txt`) using `ofstream` in append mode (`ios::app`).
+
+## Why I Built It
+I wanted to practice combining basic OOP (classes and constructors), string stream formatting, and file handling in one small program instead of testing them separately.
+
+## Known Quirks / Things to Fix
+- The student details are currently hardcoded in `main()`.
+- The output filename (`58students.txt`) and the console confirmation message (`students.txt`) do not match yet.
+- `tocsv()` already includes a trailing newline (`\n`), while `main()` adds an extra `endl`.
+
+## Planned Improvements
+- Accept student details via user input (`cin` / `getline`) instead of hardcoding them.
+- Add a CSV header row automatically when creating a new file.
+- Add basic input validation for subject marks.
