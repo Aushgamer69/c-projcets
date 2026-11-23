@@ -1,0 +1,13 @@
+# CLI Bank / ATM Simulator (C++)
+
+Small practice program I wrote in C++ to get comfortable with `while` loops, `cin`/`cout`, and `if/else` branching for a basic menu.
+
+## What it currently does
+- Starts with a sample balance (`1289.54`)
+- Lets you check balance, deposit money, withdraw money (with a basic balance check), and exit
+
+## Known limitations / things I want to improve next
+- Doesn't print a prompt before asking for deposit or withdrawal amounts
+- Doesn't stop negative numbers or non-number (`cin`) inputs yet
+- Balance resets when the program closes (no file saving yet)
+- Fix small wording/typo stuff like `"exist"` -> `"exit"`
